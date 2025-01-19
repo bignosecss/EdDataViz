@@ -33,7 +33,7 @@ studentDropdown.getElement().addEventListener('change', async () => {
     chartRenderer.showLoading();
 
     // 获取学生数据
-    const response = await fetch(`https://www.icedream61.com:8000/api/get-student-data/${selectedStudent}`);
+    const response = await fetch(`https://www.icedream61.com/api/get-student-data/${selectedStudent}`);
     if (!response.ok) {
       throw new Error(`Failed to fetch data: ${response.status}`);
     }

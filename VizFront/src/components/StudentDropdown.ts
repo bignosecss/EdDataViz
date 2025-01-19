@@ -17,7 +17,7 @@ export class StudentDropdown {
 
   private async loadStudents() {
     try {
-      const response = await fetch('https://www.icedream61.com:8000/api/get-student-names');
+      const response = await fetch('https://www.icedream61.com/api/get-student-names');
       if (!response.ok) {
         throw new Error(`Failed to fetch students: ${response.status}`);
       }

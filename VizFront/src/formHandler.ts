@@ -19,7 +19,7 @@ export function setupUploadForm(formElement: HTMLFormElement) {
     formData.append('file', uploadedFile);
 
     try {
-      const response = await fetch('https://www.icedream61.com:8000/api/upload/file', {
+      const response = await fetch('https://www.icedream61.com/api/upload/file', {
         method: 'POST',
         body: formData
       });
