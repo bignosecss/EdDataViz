@@ -1,0 +1,18 @@
+#student-dropdown {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+
+#student-dropdown:hover {
+  border-color: #888;
+}
+
+#student-dropdown:focus {
+  outline: none;
+  border-color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
