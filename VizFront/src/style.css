@@ -130,12 +130,11 @@ button:focus-visible {
 }
 
 #fileInput:hover {
-  border-color: #007bff;
+  border-color: #646cff;
 }
-
-#fileInput:focus {
-  outline: none;
-  border-color: #007bff;
+#fileInput:focus,
+#fileInput:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
 }
 
