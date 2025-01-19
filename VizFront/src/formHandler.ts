@@ -19,7 +19,7 @@ export function setupUploadForm(formElement: HTMLFormElement) {
     formData.append('file', uploadedFile);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/upload/file', {
+      const response = await fetch('http://www.icedream61.com:8000/api/upload/file', {
         method: 'POST',
         body: formData
       });
@@ -31,6 +31,9 @@ export function setupUploadForm(formElement: HTMLFormElement) {
       
       const result = await response.json();
       msgDiv.showMessage(`文件上传成功: ${result.message}`);
+      setTimeout(() => {
+      window.location.reload();
+      }, 2000);
       console.log('asda', result);
     }catch (error) {
       console.error('上传文件时出错：', error);
